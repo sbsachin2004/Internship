@@ -10,10 +10,18 @@
   <div class="form-container">
     <h2>Register</h2>
     <form id="registerForm" onsubmit="return validateRegister()">
-      <input type="text" id="registerName" placeholder="Full Name" required />
-      <input type="email" id="registerEmail" placeholder="Email" required />
-      <input type="password" id="registerPassword" placeholder="Password" required />
-      <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+      <input type="text" id="registerName" placeholder="Full Name" />
+      <div id="nameError" class="error"></div>
+
+      <input type="text" id="registerEmail" placeholder="Email" />
+      <div id="emailError" class="error"></div>
+
+      <input type="password" id="registerPassword" placeholder="Password" />
+      <div id="passError" class="error"></div>
+
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" />
+      <div id="confirmError" class="error"></div>
+
       <button type="submit">Register</button>
       <p>Already have an account? <a href="index.html">Login</a></p>
     </form>

@@ -10,8 +10,12 @@
   <div class="form-container">
     <h2>Login</h2>
     <form id="loginForm" onsubmit="return validateLogin()">
-      <input type="email" id="loginEmail" placeholder="Email" required />
-      <input type="password" id="loginPassword" placeholder="Password" required />
+      <input type="text" id="loginEmail" placeholder="Email" />
+      <div id="loginEmailError" class="error"></div>
+
+      <input type="password" id="loginPassword" placeholder="Password" />
+      <div id="loginPassError" class="error"></div>
+
       <button type="submit">Login</button>
       <p>Don't have an account? <a href="register.html">Register</a></p>
     </form>

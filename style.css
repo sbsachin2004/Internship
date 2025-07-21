@@ -52,3 +52,10 @@ a {
   padding: 10px 20px;
   border-radius: 6px;
 }
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
